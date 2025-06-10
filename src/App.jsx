@@ -23,7 +23,9 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <Sidebar color={this.state.themeColor} toggleTheme={this.toggleTheme} />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Sidebar color={this.state.themeColor} toggleTheme={this.toggleTheme} />
+      </div>
     );
   }
 }
